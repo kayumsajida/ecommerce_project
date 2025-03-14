@@ -1,6 +1,6 @@
 const Blog = () => {
     return (
-        <>
+        <> 
             <section className="flex flex-col md:flex-row gap-4 pt-20 pb-20 bg-neutral-300">
                 <div className="container mx-auto px-4 lg:px-0">
                     <div className="flex flex-wrap lg:flex-row items-center justify-between mb-8">
