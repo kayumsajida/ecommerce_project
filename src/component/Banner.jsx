@@ -1,25 +1,33 @@
 import { Link } from "react-router-dom";
+import { MoveUpRight } from 'lucide-react';
 
 const Banner = () => {
     return (
         <>
-            <secetion className="flex pt-10 pb-10 bg-white container mx-auto px-4 lg:px-0">
-                <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-5">
-                    <div className="w-full lg:w-1/2">
-                       <h2 className="text-black text-5xl lg:text-7xl font-semibold mb-3">Invest with Confidence</h2>
-                       <p className="text-black text-lg">
-                            We bring you robust financial products for your alternate investments. Explore our bouquet of Unlisted Shares, high-return Fixed Deposits, and Bonds.
-                       </p>
-                       <div className="flex flex-col lg:flex-row gap-2 mt-4">
-                            <Link to="#" className="bg-amber-600 p-3 px-10 text-center text-white rounded-full hover:bg-amber-800 transition duration-500">Get Started</Link>
-                            <Link to="#" className="border border-neutral-300 text-center p-3 px-10 rounded-full hover:bg-neutral-100 transition duration-500">Download the app</Link>
-                       </div>
+            <section className="flex bg-white">
+                <div className="flex flex-wrap lg:flex-nowrap items-center justify-between gap-5 h-screen">
+                    <div className="relative  h-full">
+                        <img src="src/assets/images/banner.jpg" className="w-full h-full object-cover" alt="" />
+                        <div className="container mx-auto">
+                            <div className="absolute top-1/2 transform -translate-y-1/2 items-center px-4 lg:px-0">
+                                <div className="bg-black p-5 px-10 py-10 rounded-2xl w-full lg:max-w-2xl">
+                                    <h2 className="text-white text-5xl lg:text-7xl font-semibold mb-4">Casual Chic Everyday</h2>
+                                    <p className="text-white text-lg">
+                                        Achieve effortless style every day with our casual chic pieces.
+                                    </p>
+                                    <div className="flex flex-col lg:flex-row gap-2 mt-10">
+                                        <Link to="#" className="bg-white p-3 px-10 inline-flex text-center text-black rounded-full hover:bg-red-500 hover:text-white transition duration-500">
+                                            Get Started
+                                            <MoveUpRight className="ml-1" />
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="w-full lg:w-1/2">
-                        <img src="src/assets/images/banner.svg" className="w-full h-full object-cover" alt="" />
-                    </div>
+
                 </div>
-            </secetion>
+            </section>
         </>
     )
 }
