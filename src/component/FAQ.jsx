@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 const faqs = [
-    { question: "What are Unlisted Shares and Pre-IPO shares?", answer: "Shares of a company that are not yet listed on the Stock Exchanges like BSE, NSE are called Unlisted Shares. Pre-IPO shares are of companies who have initiated the process of IPO (Initial Public Offer), for listing their company on a Stock Exchange" },
-    { question: "Why should you invest in Unlisted Shares?", answer: "Early Access: You can invest in top unlisted companies before it is available for the masses. You may also be able to invest in unlisted companies at a discount to its listed peers." },
-    { question: "What is the minimum investment?", answer: "The minimum investment on our platform is just Rs. 10,000. As a special offer on certain occasions and for certain companies, the minimum investment quantity becomes 1 share." }
+    { question: "What is Lorem Ipsum?", answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." },
+    { question: "Where does it come from?", answer: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source." },
+    { question: "Where can I get some?", answer: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." }
 ];
 
 export default function FAQ() {
@@ -38,7 +38,7 @@ export default function FAQ() {
                     ))}
                 </div>
                 <div className="mt-10 text-center">
-                <a class="border border-neutral-300 p-3 font-medium px-10 rounded-full hover:bg-neutral-100 transition duration-500" href="/">
+                <a class="border border-neutral-300 p-3 font-medium px-10 rounded-full hover:bg-red-500 hover:text-white hover:border-red-500 transition duration-500" href="/">
                     Show More
                 </a>
                 </div>                
