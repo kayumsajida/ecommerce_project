@@ -20,7 +20,7 @@ const ForgotPassword = () => {
                             </div>
                             <div className="flex flex-col gap-2 mt-3">                                
                                 <input type="text" placeholder="Enter Email" name="email" className="w-full text-md placeholder:text-sm border border-gray-300 focus:outline-0 p-2 px-4 duration-500 hover:border-red-500 rounded-full" />
-                                <button type="submit" className="w-full text-white font-bold bg-red-500 text-md duration-500 cursor-pointer p-2 rounded-full hover:bg-red-600">Submit</button>
+                                <button type="submit" className="w-full text-white font-bold bg-red-500 text-md duration-500 cursor-pointer p-2 rounded-full hover:bg-red-600">Reset your password test</button>
                             </div>
                             <div className="flex flex-col gap-2 mt-3">
                                 <div className="text-sm">
