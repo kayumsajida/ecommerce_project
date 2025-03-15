@@ -48,7 +48,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" className="text-sm inline-flex w-full px-2 py-1 transition-all duration-500 hover:bg-gray-50">
+                    <Link to="/forgot-password" className="text-sm inline-flex w-full px-2 py-1 transition-all duration-500 hover:bg-gray-50">
                       Forgot Password
                     </Link>
                   </li>

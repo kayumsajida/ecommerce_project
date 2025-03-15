@@ -46,7 +46,7 @@ const Login = () => {
                                 <input type="text" placeholder="Enter Email" name="email" onChange={HandleInput} className="w-full text-md placeholder:text-sm border border-gray-300 focus:outline-0 p-2 px-4 duration-500 hover:border-red-500 rounded-full" />
                                 <input type="password" placeholder="Password" name="password" onChange={HandleInput} className="w-full text-md placeholder:text-sm border border-gray-300 focus:outline-0 p-2 px-4 duration-500 hover:border-red-500 rounded-full" />
                                 <p>
-                                    <a href="#" className="text-sm hover:text-red-500 duration-500">Forgot Password</a>
+                                    <a href="/forgot-password" className="text-sm hover:text-red-500 duration-500">Forgot Password</a>
                                 </p>
                                 <button type="submit" onClick={HandleSubmit} className="w-full text-white font-bold bg-red-500 text-md duration-500 cursor-pointer p-2 rounded-full hover:bg-red-600">Sign In</button>
                             </div>

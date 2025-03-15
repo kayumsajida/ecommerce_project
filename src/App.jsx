@@ -6,10 +6,11 @@ import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import Login from './component/Login';
 import SignUp from './component/SignUp';
+import ForgotPassword from './component/ForgotPassword';
 
 function App() {  
   const location = useLocation();
-  const HideHeaderFooter = location.pathname === "/login" || location.pathname === "/signup";
+  const HideHeaderFooter = location.pathname === "/login" || location.pathname === "/signup" || location.pathname === "/forgot-password";
   return (
     <>
       {!HideHeaderFooter && <Navbar />}
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<SignUp />} />
+        <Route exact path='/forgot-password' element={<ForgotPassword />} />
       </Routes>
       {!HideHeaderFooter && <Footer />}
     </>
