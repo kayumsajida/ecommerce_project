@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TopTrending = () => {
     return (
         <>
@@ -16,30 +18,42 @@ const TopTrending = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
                         <div className="bg-white">
                             <img src="src/assets/images/women-8.jpg" className="w-full object-cover rounded-2xl" alt="" />
-                            <div className="p-4">
+                            <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Ribbed cotton-blend top</h2>
-                                <p className="text-neutral-400 text-sm font-bold">$39.99</p>
+                                <p className="text-black font-bold text-2xl">$39.99</p>
+                                <div className="mt-4">
+                                    <Link to="#" className="p-2 bg-red-500 text-white rounded-full px-10 text-sm hover:bg-red-700 transition-all duration-500">Add to Cart</Link>
+                                </div>
                             </div>
                         </div>
                         <div className="bg-white">
                             <img src="src/assets/images/women-172.jpg" className="w-full object-cover rounded-2xl" alt="" />
-                            <div className="p-4">
+                            <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Faux-leather trousers</h2>
-                                <p className="text-neutral-400 text-sm font-bold ">$79.99</p>
+                                <p className="text-black font-bold text-2xl">$79.99</p>
+                                <div className="mt-4">
+                                    <Link to="#" className="p-2 bg-red-500 text-white rounded-full px-10 text-sm hover:bg-red-700 transition-all duration-500">Add to Cart</Link>
+                                </div>
                             </div>
                         </div>
                         <div className="bg-white">
                             <img src="src/assets/images/women-84.jpg" className="w-full object-cover rounded-2xl" alt="" />
-                            <div className="p-4">
+                            <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Belt wrap dress</h2>
-                                <p className="text-neutral-400 text-sm font-bold"><span className="line-through font-normal">$98.00</span> $129.99</p>
+                                <p className="text-black font-bold text-2xl"><span className="line-through font-normal">$98.00</span> $129.99</p>
+                                <div className="mt-4">
+                                    <Link to="#" className="p-2 bg-red-500 text-white rounded-full px-10 text-sm hover:bg-red-700 transition-all duration-500">Add to Cart</Link>
+                                </div>
                             </div>
                         </div>
                         <div className="bg-white">
                             <img src="src/assets/images/women-103.jpg" className="w-full object-cover rounded-2xl" alt="" />
-                            <div className="p-4">
+                            <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Double-button trench coat</h2>
-                                <p className="text-neutral-400 text-sm font-bold">$229.99</p>
+                                <p className="text-black font-bold text-2xl">$229.99</p>
+                                <div className="mt-4">
+                                    <Link to="#" className="p-2 bg-red-500 text-white rounded-full px-10 text-sm hover:bg-red-700 transition-all duration-500">Add to Cart</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
