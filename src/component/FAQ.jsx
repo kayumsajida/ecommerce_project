@@ -26,8 +26,8 @@ export default function FAQ() {
                             >
                                 {faq.question}
                                 <span className={`transform transition-transform ${openIndex === index ? "rotate-180" : "rotate-0"}`}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </span>
                             </button>
@@ -38,10 +38,10 @@ export default function FAQ() {
                     ))}
                 </div>
                 <div className="mt-10 text-center">
-                <a class="border border-neutral-300 p-3 font-medium px-10 rounded-full hover:bg-red-500 hover:text-white hover:border-red-500 transition duration-500" href="/">
-                    Show More
-                </a>
-                </div>                
+                    <a className="border border-neutral-300 p-3 font-medium px-10 rounded-full hover:bg-red-500 hover:text-white hover:border-red-500 transition duration-500" href="/">
+                        Show More
+                    </a>
+                </div>
             </div>
         </section>
     );
