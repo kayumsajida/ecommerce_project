@@ -38,7 +38,7 @@ const Footer = () => {
                         <div className="w-full mb-3 lg:mb-0 xl:mb-0 lg:w-1/4 xl:w-1/3">
                             <h2 className="text-sm text-white mb-8 lg:text-lg font-medium">Newletter</h2>
                             <div className="flex flex-col gap-4">
-                                <input type="text" className="form-control border border-white text-black text-lg bg-white p-2 rounded-full focus:border-amber-100" placeholder="Enter Email" />
+                                <input type="text" className="form-control border border-white text-black text-lg bg-white p-2 px-4 rounded-full focus:border-amber-100 placeholder:text-sm" placeholder="Enter Email"  />
                                 <p className="text-neutral-400 font-normal text-sm">
                                     By clicking subcribe, you agree to the Terms of Service and Privacy Policy.
                                 </p>
