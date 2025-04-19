@@ -15,7 +15,7 @@ function App() {
     <>
       {!HideHeaderFooter && <Navbar />}
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={ <Home /> } />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<SignUp />} />
         <Route exact path='/forgot-password' element={<ForgotPassword />} />
