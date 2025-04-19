@@ -15,8 +15,8 @@ const TopTrending = () => {
 
                         <a href="#" className="text-neutral-600 font-medium underline hover:text-red-500 transition duration-500">See More</a>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
-                        <div className="bg-white">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 group">
+                        <div className="bg-white group-hover:blur-sm hover:!blur-none group-hover:scale-90 hover:!scale-105 transition-all duration-500">
                             <img src="src/assets/images/women-8.jpg" className="w-full object-cover rounded-2xl" alt="" />
                             <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Ribbed cotton-blend top</h2>
@@ -26,7 +26,7 @@ const TopTrending = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white">
+                        <div className="bg-white group-hover:blur-sm hover:!blur-none group-hover:scale-90 hover:!scale-105 transition-all duration-500">
                             <img src="src/assets/images/women-172.jpg" className="w-full object-cover rounded-2xl" alt="" />
                             <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Faux-leather trousers</h2>
@@ -36,7 +36,7 @@ const TopTrending = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white">
+                        <div className="bg-white group-hover:blur-sm hover:!blur-none group-hover:scale-90 hover:!scale-105 transition-all duration-500">
                             <img src="src/assets/images/women-84.jpg" className="w-full object-cover rounded-2xl" alt="" />
                             <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Belt wrap dress</h2>
@@ -46,7 +46,7 @@ const TopTrending = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-white">
+                        <div className="bg-white group-hover:blur-sm hover:!blur-none group-hover:scale-90 hover:!scale-105 transition-all duration-500">
                             <img src="src/assets/images/women-103.jpg" className="w-full object-cover rounded-2xl" alt="" />
                             <div className="py-2 px-2">
                                 <h2 className="text-1xl mb-2 font-bold">Double-button trench coat</h2>
