@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, User, ShoppingCart } from "lucide-react";
+import { Menu, X, User, ShoppingCart, Search } from "lucide-react";
+import SearchBar from "./SerachBar";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,9 @@ const Navbar = () => {
           </div>
 
           {/* Login/Signup (Always Visible) */}
-          <div className="hidden md:flex gap-4">
+          <div className="items-center hidden md:flex gap-4">
             <div className="relative">
-              <ShoppingCart />
+              <ShoppingCart className="h-5 w-5" />
               <div className="absolute -top-3 -right-2">
                 <div className="flex w-4 h-4 bg-red-500 rounded-full text-white items-center justify-center text-[10px]">
                   0
@@ -34,7 +35,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="group relative">
-              <Link to="#"><User /></Link>
+              <Link to="#"><User className="h-5 w-5" /></Link>
               <div className="hidden absolute right-0 transform -translate-y-2 group-hover:block transition-all duration-500">
                 <ul className="bg-white p-2 w-40 shadow-lg rounded-lg mt-4">
                   <li>
@@ -53,8 +54,10 @@ const Navbar = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div>           
+
             </div>
+            <SearchBar />
           </div>
 
           {/* Mobile Menu Button */}
@@ -95,6 +98,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               </div>
+              <SearchBar />
             </div>
           </div>
         )}
