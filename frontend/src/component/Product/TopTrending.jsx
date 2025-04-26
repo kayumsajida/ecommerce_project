@@ -148,7 +148,7 @@ const TopTrending = () => {
           onClick={scrollLeft}
           disabled={!canScrollLeft}
           className={`border border-gray-400 w-8 h-8 rounded-sm flex items-center justify-center cursor-pointer ${
-            !canScrollLeft ? "opacity-50 cursor-not-allowed" : ""
+            !canScrollLeft ? "opacity-50 cursor-not-allowed bg-gray-300" : ""
           }`}
         >
           <MdKeyboardArrowLeft />
@@ -157,7 +157,7 @@ const TopTrending = () => {
           onClick={scrollRight}
           disabled={!canScrollRight}
           className={`border border-gray-400 w-8 h-8 rounded-sm flex items-center justify-center cursor-pointer ${
-            !canScrollRight ? "opacity-50 cursor-not-allowed" : ""
+            !canScrollRight ? "opacity-50 cursor-not-allowed bg-gray-300" : ""
           }`}
         >
           <MdKeyboardArrowRight />
