@@ -25,16 +25,16 @@ const CartContent = () => {
         <>
             {
                 cartProducts.map((product, index) => (
-                    <div className="flex items-center justify-between py-4 border-b">
+                    <div key={index} className="flex items-center justify-between py-4 border-b">
                         <div className="flex items-start">
                             <img src={product.Image} alt={product.name} className="w-20 h-20 object-cover mr-3 rounded-sm" />
                             <div>
                                 <h3>{product.name}</h3>
                                 <p className="text-sm">{product.size} | color: {product.color}</p>
                                 <div className="flex items-center mt-2">
-                                    <button className="border rounded px-2 text-sm w-6 h-6 font-medium flex items-center justify-center ">-</button>
+                                    <button className="border rounded px-2 text-sm w-6 h-6 font-medium flex items-center justify-center cursor-pointer">-</button>
                                     <span className="mx-4">{product.quantity}</span>
-                                    <button className="border rounded px-2 text-sm w-6 h-6 font-medium flex items-center justify-center">+</button>
+                                    <button className="border rounded px-2 text-sm w-6 h-6 font-medium flex items-center justify-center cursor-pointer">+</button>
                                 </div>
                             </div>                                                    
                         </div>    

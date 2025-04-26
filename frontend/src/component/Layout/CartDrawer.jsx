@@ -4,7 +4,7 @@ import CartContent from "../Cart/CartContent";
 const CartDrawer = ({cartOpen, toggleCart}) => {
     return (        
         <>
-            <div className={`fixed top-0 right-0 w-full lg:w-2/6 h-full transition-all duration-500 z-50 bg-white shadow-lg flex flex-col ${cartOpen ? "translate-x-0" : "translate-x-full"}`}>                
+            <div className={`fixed top-0 right-0 w-full lg:w-2/6 h-full transition-all duration-500 z-50 bg-white flex flex-col ${cartOpen ? "translate-x-0 shadow-lg" : "translate-x-full"}`}>                
                 <div className="flex justify-between py-4 px-4">
                     <h2 className="text-lg font-bold">Your Cart</h2>
                     <button onClick={toggleCart} className="cursor-pointer"><X /></button>
