@@ -3,3 +3,13 @@
 @theme {
     --color-neutral: #0f1016;
 }
+
+@layer components {
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+}

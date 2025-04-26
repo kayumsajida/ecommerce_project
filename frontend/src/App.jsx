@@ -3,6 +3,7 @@ import Login from './component/Login';
 import SignUp from './component/SignUp';
 import ForgotPassword from './component/ForgotPassword';
 import UserLayout from './component/Layout/UserLayout';
+import Home from './component/Pages/Home';
 
 function App() {  
   // const location = useLocation();
@@ -11,11 +12,14 @@ function App() {
     <>
       {/* {!HideHeaderFooter && <Navbar />} */}
       <Routes>
-        <Route path='/' element={ <UserLayout /> } />
-        <Route exact path='/login' element={<Login />} />
+        <Route path='/' element={<UserLayout />}>
+          <Route index element={<Home />} />
+        </Route>        
+        {/* <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<SignUp />} />
-        <Route exact path='/forgot-password' element={<ForgotPassword />} />
+        <Route exact path='/forgot-password' element={<ForgotPassword />} /> */}
       </Routes>
+
       {/* {!HideHeaderFooter && <Footer />} */}
     </>
   )
